@@ -78,7 +78,7 @@ Download the HYDAT SQLite database from Environment and Climate Change Canada an
 
 Run the notebook sequentially to reproduce the analysis, validation, and forecasts.
 
-##Author
+## Author
 Mustafa Zazai
 Water Resources Engineering Student at the University of Guelph
 June 2026
