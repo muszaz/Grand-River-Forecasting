@@ -82,7 +82,8 @@ pandas numpy matplotlib statsmodels pmdarima scikit-learn
 
 Download the HYDAT SQLite database from Environment and Climate Change Canada and place Hydat.sqlite3 in the project directory.
 
-Run the notebook sequentially to reproduce the analysis, validation, and forecasts.
+Run the Python script to reproduce the analysis, validation, and forecasts:
+
 
 ## Author
 
