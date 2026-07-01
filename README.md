@@ -1,9 +1,10 @@
-# Grand-River-Forecasting
+## Grand River Forecasting with SARIMAX
 This project forecasts monthly streamflow for the Grand River at the Galt monitoring station using a SARIMAX (Seasonal Autoregressional Moving Average with Exogynous Variables) Model.
 
 The objective was to determine whether incorporating upstream river discharge improves forecasting accuracy compared with a standard SARIMA model that relies only on historical observations.
 
 Using monthly discharge data from Environment and Climate Change Canada's HYDAT database, the SARIMAX model significantly outperformed the baseline SARIMA model by incorporating measurements from an upstream monitoring station.
+![Grand River Forecast](Grand%20River%20Forecast.jpg)
 
 Key Results entage Error)
 | Model | MAE (Mean Absolute Error) | MAPE (Mean Absolute Percentage Error) |
@@ -15,7 +16,6 @@ Adding upstream discharge as an exogenous variable reduced forecasting error sub
 
 Dataset
 
-Source
 
 Environment and Climate Change Canada – HYDAT Database
 
@@ -30,6 +30,9 @@ Time Period
 Monthly mean discharge (m³/s)
 
 Missing monthly values were interpolated using time-based interpolation before the data were aligned and resampled into continuous monthly time series.
+
+![Flow Time Series](Flow%20Time%20Series.jpg)
+
 
 ## Methodology
 The forecasting pipeline consists of the following steps:
@@ -54,6 +57,8 @@ scikit-learn
 SQLite
 
 ## Validation
+
+![Validation Results](Validation.jpg)
 
 To evaluate performance, the final twelve months of observations were withheld from training.
 
