@@ -4,9 +4,10 @@ This project forecasts monthly streamflow for the Grand River at the Galt monito
 The objective was to determine whether incorporating upstream river discharge improves forecasting accuracy compared with a standard SARIMA model that relies only on historical observations.
 
 Using monthly discharge data from Environment and Climate Change Canada's HYDAT database, the SARIMAX model significantly outperformed the baseline SARIMA model by incorporating measurements from an upstream monitoring station.
+
 ![Grand River Forecast](Grand%20River%20Forecast.jpg)
 
-Key Results entage Error)
+Key Results 
 | Model | MAE (Mean Absolute Error) | MAPE (Mean Absolute Percentage Error) |
 |------|---------------------------:|--------------------------------------:|
 | SARIMA | 33 m³/s | 227% |
